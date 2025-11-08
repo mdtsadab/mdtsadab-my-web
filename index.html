@@ -22,4 +22,6 @@
 </div>
 {% endblock %}
 
-<script src="static/main/js/main.js"></script>
+{% block extra_js %}
+<script src="{{ url_for('static', filename='main/js/main.js') }}"></script>
+{% endblock %}
